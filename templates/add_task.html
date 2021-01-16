@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="indigo-text- text-darken-4 center-align">Add Task</h3>
+<h3 class="indigo-text text-darken-4 center-align">Add Task</h3>
 
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="">
+        <!--Category-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix indigo-text text-darken-4"></i>
@@ -17,6 +18,7 @@
                 <label for="category_name">Task Category</label>
             </div>
         </div>
+        <!--Task Name-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix indigo-text text-darken-4"></i>
@@ -24,6 +26,7 @@
                 <label for="task_name">Task Name</label>
             </div>
         </div>
+        <!--Task description-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix indigo-text text-darken-4"></i>
@@ -32,7 +35,7 @@
                 <label for="task_description">Task Description</label>
             </div>
         </div>
-
+        <!--Due date-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-calendar-alt prefix indigo-text text-darken-4"></i>
@@ -40,6 +43,7 @@
                 <label for="due_date">Due date</label>
             </div>
         </div>
+        <!--Urgent-->
         <div class="row">
             <div class="input-field col s12">
                 <div class="switch">
@@ -49,6 +53,14 @@
                         <span class="lever"></span>
                         Is Urgent
                     </label>
+                </div>
+            </div>
+            <!--Submit-->
+            <div class="row">
+                <div class="class col s12 center-align">
+                    <button type="submit" class="btn-large indigo darken-1 text-shadow">
+                        Add Task <i class="fas fa-plus-square right"></i>
+                    </button>
                 </div>
             </div>
         </div>
